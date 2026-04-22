@@ -1,13 +1,13 @@
 {% set name = "py-tes" %}
-{% set version = "0.4.2" %}
+{% set version = "1.1.2" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: f6926cd59b7dfc8e37840955bf1cc7c43ad4d99ba5eae100b6156c918617472c
+  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz"
+  sha256: 2168d0c71061ad52c00cf42368f7e57341966587f8ac0ca147b9c0cb75bc858d
 
 build:
   number: 0
